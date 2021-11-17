@@ -93,8 +93,7 @@ function createComment(organizationId, accountId, activityId, creatorEmail, crea
             console.log(JSON.stringify(response.data));
             const resObj = response.data;
             if (resObj.data != null) {
-                console.log('Comentário inserido com sucesso na atividade: ' +
-                    resObj.data.createComment.id);
+                console.log('Atividade comentada com sucesso!');
             }
             else {
                 core.setFailed(resObj.errors[0]);
@@ -269,7 +268,7 @@ const creatorEmail = core.getInput('creatorEmail'); //Email criador do comentár
 const creatorPassword = core.getInput('creatorPassword'); //Password (Váriavel de ambiente{sescrets.ARTIA_PASSWORD} informada no main.yml do workflow).
 const pull_request = objPayload.pull_request;
 const activityId = pull_request.title.split('[').pop().split(']')[0];
-const content = `Comentário criado por: ${pull_request.user.login} via API | Mais informações no GitHub: ${pull_request.url} \n${pull_request.body}`;
+const content = `Comentário criado por: ${pull_request.user.login} a partir de um Pull-Request via API  \n${pull_request.body}\nMais informações no GitHub: ${pull_request.url}`;
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
