@@ -61,10 +61,7 @@ export async function createComment(
       console.log(JSON.stringify(response.data))
       const resObj = response.data
       if (resObj.data != null) {
-        console.log(
-          'Comentário inserido com sucesso na atividade: ' +
-            resObj.data.createComment.id
-        )
+        console.log('Atividade comentada com sucesso!')
       } else {
         core.setFailed(resObj.errors[0])
       }
