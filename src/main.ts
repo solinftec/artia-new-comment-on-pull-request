@@ -1,8 +1,30 @@
 import * as core from '@actions/core'
+import * as github from '@actions/github'
+
+//Functions
+import {createComment} from './createComment'
+
+// Get the JSON webhook payload for the event that triggered the workflow//
+const payload         = JSON.stringify(github.context.payload, undefined, 2)
+const objPayload      = JSON.parse(payload)
+const organizationId  = parseInt(core.getInput('organizationId')) //OrganizationId é o id da empresa/organização cadastrada no artia. (informado no main.yml do workflow)
+const accountId       = parseInt(core.getInput('accountId')) //AccountId é o id do grupo de trabalho. (informado no main.yml do workflow)
+const creatorEmail    = core.getInput('creatorEmail') //Email criador do comentário (informado no main.yml do workflow).
+const creatorPassword = core.getInput('creatorPassword') //Password (Váriavel de ambiente{sescrets.ARTIA_PASSWORD} informada no main.yml do workflow).
+const issue           = objPayload.issue
+const activityId      = issue.title.split('[').pop().split(']')[0]
+const content         = `Autor: ${objPayload.head_commit.author.name}  | Tipo: Push | Mais informações no GitHub: ${objPayload.compare}`
 
 async function run(): Promise<void> {
   try {
-    core.debug(`Hello world! Mobral INC!!`) // debug is only output if you set the secret `ACTIONS_STEP_DEBUG` to true
+    createComment(
+      organizationId,
+      accountId,
+      activityId,
+      creatorEmail,
+      creatorPassword,
+      content
+    )
   } catch (error) {
     if (error instanceof Error) core.setFailed(error.message)
   }
