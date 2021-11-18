@@ -24,7 +24,12 @@ const activityId = artiaUrl
   .pop()
   .split(artiaUrl.length)[0]
 
-const content = `Comentário criado por: ${pull_request.user.login} a partir de um Pull-Request via API  \n${pull_request.body}\nMais informações no GitHub: ${pull_request.html_url}`
+const ArtiaComment = pull_request.body
+  .split('Start Artia Comment')
+  .pop()
+  .split('End Artia Comment')[0]
+
+const content = `Comentário criado por: ${pull_request.user.login} a partir de um Pull-Request via API  \n${ArtiaComment}\nMais informações no GitHub: ${pull_request.html_url}`
 
 async function run(): Promise<void> {
   try {
