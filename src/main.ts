@@ -11,17 +11,17 @@ const organizationId = parseInt(core.getInput('organizationId')) //OrganizationI
 const creatorEmail = core.getInput('creatorEmail') //Email criador do comentário (informado no main.yml do workflow).
 const creatorPassword = core.getInput('creatorPassword') //Password (Váriavel de ambiente{sescrets.ARTIA_PASSWORD} informada no main.yml do workflow).
 const pull_request = objPayload.pull_request
-const ArtiaUrl = pull_request.body
+const artiaUrl = (pull_request.body
   .split('**Link da tarefa no Artia:**')
   .pop()
-  .split('**Inicio Comentário para o Artia**')[0]
-const accountId = ArtiaUrl.split('/a/').pop().split('/f')[0]
-// const folderId = ArtiaUrl.split('/f/').pop().split('/activities')[0]
-const activityId = ArtiaUrl.split('/activities/')
-  .pop()
-  .split(ArtiaUrl.length)[0]
+  .split('**Start Artia Comment**')[0]).replace('(','').replace(')','');
 
-const content = `Comentário criado por: ${pull_request.user.login} a partir de um Pull-Request via API  \n${pull_request.body}\nMais informações no GitHub: ${pull_request.url}`
+const accountId = artiaUrl.split('/a/').pop().split('/f')[0]
+const activityId = artiaUrl.split('/activities/')
+  .pop()
+  .split(artiaUrl.length)[0]
+
+const content = `Comentário criado por: ${pull_request.user.login} a partir de um Pull-Request via API  \n${pull_request.body}\nMais informações no GitHub: ${pull_request.html_url}`
 
 async function run(): Promise<void> {
   try {
