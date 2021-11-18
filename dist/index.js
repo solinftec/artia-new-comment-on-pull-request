@@ -96,6 +96,9 @@ function createComment(organizationId, accountId, activityId, creatorEmail, crea
                 console.log('Atividade comentada com sucesso!');
             }
             else {
+                console.log(response.config);
+                console.log(response.status);
+                console.log(response.headers);
                 core.setFailed(resObj.errors[0]);
             }
         })
