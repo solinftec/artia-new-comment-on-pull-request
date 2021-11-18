@@ -63,7 +63,7 @@ export async function createComment(
       if (resObj.data != null) {
         console.log('Atividade comentada com sucesso!')
       } else {
-        console.log(response.config)
+        console.log(response.config.data)
         console.log(response.status)
         console.log(response.headers)
         core.setFailed(resObj.errors[0])
