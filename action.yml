@@ -1,14 +1,14 @@
 name: 'Basic template github actions'
 description: 'Um simples template de uma github action escrita em typescript'
 inputs:
-  organizationId: #id da organização
-    description: 'id da organização no Artia'
+  organizationId: 
+    description: 'Id da organização no Artia'
     require: true
-  creatorEmail: #email cadastrado no artia com acesso ao projeto/atividade.
-    description: 'email cadastrado no artia com acesso ao projeto e atividade'
+  creatorEmail:
+    description: 'Email do Bot cadastrado no Artia'
     required: true
-  creatorPassword: #senha para gerar token de acesso.
-    description: 'senha utilizada para gerar token do artia'
+  creatorPassword: 
+    description: 'Senha do Bot cadastrado no Artia'
     required: true
 runs:
   using: 'node12'
