@@ -3,10 +3,11 @@ import * as github from '@actions/github'
 
 //Functions
 import {createComment} from './createComment'
-
+import {getUserName} from './getUserName'
 // Get the JSON webhook payload for the event that triggered the workflow//
 const payload = JSON.stringify(github.context.payload, undefined, 2)
 const objPayload = JSON.parse(payload)
+
 const organizationId = parseInt(core.getInput('organizationId')) //OrganizationId é o id da empresa/organização cadastrada no artia. (informado no main.yml do workflow)
 const creatorEmail = core.getInput('creatorEmail') //Email criador do comentário (informado no main.yml do workflow).
 const creatorPassword = core.getInput('creatorPassword') //Password (Váriavel de ambiente{sescrets.ARTIA_PASSWORD} informada no main.yml do workflow).
@@ -28,8 +29,9 @@ const ArtiaComment = pull_request.body
   .split('Start Artia Comment')
   .pop()
   .split('End Artia Comment')[0]
+const userName = getUserName(pull_request.user.login)
 
-const content = `Comentário criado por: ${pull_request.user.login} a partir de um Pull-Request via API  \n${ArtiaComment}\nMais informações no GitHub: ${pull_request.html_url}`
+const content = `Comentário criado por: ${userName} a partir de um Pull-Request via API  \n${ArtiaComment}\nMais informações no GitHub: ${pull_request.html_url}`
 
 async function run(): Promise<void> {
   try {
