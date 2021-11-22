@@ -272,7 +272,9 @@ const pull_request = objPayload.pull_request;
 const artiaUrl = pull_request.body
     .split('Link da tarefa no Artia:[')
     .pop()
-    .split(']')[0];
+    .split('](')
+    .pop()
+    .split(')')[0];
 const accountId = artiaUrl.split('/a/').pop().split('/f')[0];
 const activityId = artiaUrl
     .split('/activities/')
