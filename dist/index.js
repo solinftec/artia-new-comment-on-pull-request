@@ -262,19 +262,19 @@ const core = __importStar(__nccwpck_require__(2186));
 const github = __importStar(__nccwpck_require__(5438));
 //Functions
 const createComment_1 = __nccwpck_require__(6206);
-// Get the JSON webhook payload for the event that triggered the workflow//
-const payload = JSON.stringify(github.context.payload, undefined, 2);
+const userInfo_1 = __nccwpck_require__(8418);
+const payload = JSON.stringify(github.context.payload, undefined, 2); // Get the JSON webhook payload for the event that triggered the workflow//
 const objPayload = JSON.parse(payload);
 const organizationId = parseInt(core.getInput('organizationId')); //OrganizationId é o id da empresa/organização cadastrada no artia. (informado no main.yml do workflow)
 const creatorEmail = core.getInput('creatorEmail'); //Email criador do comentário (informado no main.yml do workflow).
 const creatorPassword = core.getInput('creatorPassword'); //Password (Váriavel de ambiente{sescrets.ARTIA_PASSWORD} informada no main.yml do workflow).
 const pull_request = objPayload.pull_request;
 const artiaUrl = pull_request.body
-    .split('**Link da tarefa no Artia:**')
+    .split('Link da tarefa no Artia:[')
     .pop()
-    .split('**Start Artia Comment**')[0]
-    .replace('(', '')
-    .replace(')', '');
+    .split('](')
+    .pop()
+    .split(')')[0];
 const accountId = artiaUrl.split('/a/').pop().split('/f')[0];
 const activityId = artiaUrl
     .split('/activities/')
@@ -284,10 +284,11 @@ const ArtiaComment = pull_request.body
     .split('Start Artia Comment')
     .pop()
     .split('End Artia Comment')[0];
-const content = `Comentário criado por: ${pull_request.user.login} a partir de um Pull-Request via API  \n${ArtiaComment}\nMais informações no GitHub: ${pull_request.html_url}`;
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
+            const userName = yield (0, userInfo_1.getName)(pull_request.user.login);
+            const content = `Comentário criado por: ${userName} a partir de um Pull-Request via API  \n${ArtiaComment}\nMais informações no GitHub: ${pull_request.html_url}`;
             (0, createComment_1.createComment)(organizationId, accountId, activityId, creatorEmail, creatorPassword, content);
         }
         catch (error) {
@@ -297,6 +298,30 @@ function run() {
     });
 }
 run();
+
+
+/***/ }),
+
+/***/ 8418:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getName = void 0;
+const axios_1 = __importDefault(__nccwpck_require__(6545));
+function getName(userLogin) {
+    return axios_1.default
+        .get(`https://api.github.com/users/${userLogin}`)
+        .then(function (response) {
+        const userName = response.data.name;
+        return userName;
+    });
+}
+exports.getName = getName;
 
 
 /***/ }),
