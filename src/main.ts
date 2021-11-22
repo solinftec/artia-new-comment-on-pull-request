@@ -12,11 +12,9 @@ const creatorEmail = core.getInput('creatorEmail') //Email criador do comentári
 const creatorPassword = core.getInput('creatorPassword') //Password (Váriavel de ambiente{sescrets.ARTIA_PASSWORD} informada no main.yml do workflow).
 const pull_request = objPayload.pull_request
 const artiaUrl = pull_request.body
-  .split('**Link da tarefa no Artia:**')
+  .split('Link da tarefa no Artia:[')
   .pop()
-  .split('**Start Artia Comment**')[0]
-  .replace('(', '')
-  .replace(')', '')
+  .split(']')[0]
 const accountId = artiaUrl.split('/a/').pop().split('/f')[0]
 const activityId = artiaUrl
   .split('/activities/')
