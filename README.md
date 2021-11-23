@@ -32,6 +32,7 @@ jobs:
           creatorPassword: ${{ secrets.BOT_ARTIA_PASSWORD }}
 
 ```
+> Obs: Ao colar é importante que aindentação do código seja mantinda. 
 
 
 Clique em `Use this Template` e crie um repositório. Esse repositório precisa ser público para que você possa compartilhar essa action com outros repositórios.
