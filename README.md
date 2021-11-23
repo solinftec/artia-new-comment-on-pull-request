@@ -1,8 +1,9 @@
-# Criar uma Action JavaScript utilizando TypeScript.
+# criar-comentario-por-pull-request
 
 :rocket: :rocket: :rocket:
 
-Se você não sabe o que está fazendo acesse o link: [Hello World JavaScript Action](https://github.com/actions/hello-world-javascript-action)
+Esse é repositório de uma Github Action. Ele faz o seguinte:
+### Ao fazer o merge de um Pull Reuqest ele cria um comentário na atividade do Artia.
 
 Essa ação foi criada a partir do template: [Typescript-Action-Template](https://github.com/actions/typescript-action)
 
