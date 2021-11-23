@@ -35,6 +35,8 @@ jobs:
 > Obs: Ao copiar e colar o código acima é importante que a indentação do código seja mantinda. 
 
 5. Mude o nome do arquivo de `main.yml` para `artia_comment_on_pr.yml`.
+6. Aperte no botão `Start commit` e depois no botão `Commit new file`.
+
 
 
 
