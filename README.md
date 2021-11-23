@@ -57,7 +57,7 @@ Link da atividade no Artia:[Cole aqui o título da atividade](Cole aqui o link d
 ## Pronto! Agora vamos testar se funciona.
 > Faça um merge de um Pull Request para o seu branch principal (Master ou Main). Ao abrir esse Pull Request você já verá o template `pull_request_template.md` aparecer. Siga as intruções que estão no template e faça o merge. Caso tudo esteja certinho, um comentário será criado na atividade do Artia.
 
-> Abaixo um exemplo de um `Pull Request` seguindo o template da nossa integração:
+### Abaixo um exemplo de um `Pull Request` seguindo o template da nossa integração:
 
 ```md
 Link da atividade no Artia:[Cole aqui o título da atividade](Cole aqui o link da atividade)
