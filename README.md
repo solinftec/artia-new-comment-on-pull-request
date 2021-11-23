@@ -1,12 +1,15 @@
-## Integração Github Actions - Artia 
-# Criar comentário por Pull Request
+# Integração Github - Artia 
 
 Esse repositório é uma Github Action e ela faz o seguinte:
-> Ao fazer o merge de um Pull Request é criado um comentário na atividade do Artia.
+> Quando acontecer o merge de uma Pull Request é criado um comentário na atividade do Artia.
 
-Essa ação foi criada a partir do template: [Typescript-Action-Template](https://github.com/actions/typescript-action)
 
-## Criar ação a partir deste template
+
+## Como usar essa action no seu repositório?
+
+1. Vá na aba `Actions` do seu repositório 
+2. Aperte em `Set up a workflow yourself`. Ao apertar nesse botão o Github cria um arquivo `main.yml` na pasta `.github/workflows/`.
+3. Mude o nome de 
 
 Clique em `Use this Template` e crie um repositório. Esse repositório precisa ser público para que você possa compartilhar essa action com outros repositórios.
 
