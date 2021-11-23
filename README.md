@@ -46,7 +46,7 @@ jobs:
 8. Copie e cole o texto abaixo no arquivo `.github/pull_request_template.md`.
 
 ```
-Link da atividade no Artia:[Cole aqui o titulo da atividade](Cole aqui o link da atividade mantendo os parenteses)
+Link da atividade no Artia:[Cole aqui o título dentro dos colchetes](Cole aqui o link da atividade dentro dos parênteses)
 
 **Start Artia Comment**
 > Escreva aqui o comentário que será enviado para o Artia. Obs: Não insira código HTML/Markdown
