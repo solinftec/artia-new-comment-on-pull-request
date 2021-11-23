@@ -9,7 +9,7 @@ Esse repositório é uma Github Action e ela faz o seguinte:
 
 1. Vá na aba `Actions` do seu repositório 
 2. Aperte em `Set up a workflow yourself`. Ao apertar nesse botão o Github cria um arquivo `main.yml` na pasta `.github/workflows/`.
-3. Mude o nome de 
+3. Mude o nome de `main.yml` para `artia-new-comment-on-pull-request.yml`.
 
 Clique em `Use this Template` e crie um repositório. Esse repositório precisa ser público para que você possa compartilhar essa action com outros repositórios.
 
