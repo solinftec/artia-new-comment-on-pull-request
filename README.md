@@ -1,4 +1,4 @@
-# criar-comentario-por-pull-request
+# Criar comentario por Pull Request
 
 :rocket: :rocket: :rocket:
 
@@ -13,7 +13,7 @@ Clique em `Use this Template` e modifique com as informações para o seu reposi
 
 ## Escreva seu código dentro do arquivo Main.ts na pasta src (Crie novos arquivos se necessário, mas sempre os chame dentro do Main e crie eles dentro da pasta src)
 
-> Primeiramente tenha a versão mais recente do node instalada em conjunto com o npm.
+> Para evitar probrelmas tenha a versão LTS mais recente do NodeJs instalada em conjunto com o npm.
 
 Instalar as dependências
 
