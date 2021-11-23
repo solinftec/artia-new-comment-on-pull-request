@@ -9,7 +9,7 @@ Essa ação foi criada a partir do template: [Typescript-Action-Template](https:
 
 ## Criar ação a partir deste template
 
-Clique em `Use this Template` e modifique com as informações para o seu repositório.
+Clique em `Use this Template` e crie um repositório. Esse repositório precisa ser público para que você possa compartilhar essa action com outros repositórios.
 
 ## Escreva seu código dentro do arquivo Main.ts na pasta src (Crie novos arquivos se necessário, mas sempre os chame dentro do Main e crie eles dentro da pasta src)
 
