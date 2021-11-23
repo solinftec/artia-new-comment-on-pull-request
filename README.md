@@ -9,7 +9,30 @@
 
 1. Vá na aba `Actions` do seu repositório.
 2. Aperte em `Set up a workflow yourself`. Ao apertar nesse botão o Github cria um arquivo `main.yml` na pasta `.github/workflows/`.
-3. Mude o nome de `main.yml` para `artia-new-comment-on-pull-request.yml`.
+3. Mude o nome do arquivo de `main.yml` para `artia-new-comment-on-pull-request.yml`.
+4. Delete todo o código que já veio como template dentro do arquivo `main.yml` e cole o seguinte código:
+```
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+      - master
+  
+jobs:
+  artia_comment_job:
+    runs-on: ubuntu-latest
+    name: Comment Activity.
+    steps:
+      - name: Comentando Atividade
+        uses: solinftec/artia-new-comment-on-pull-request@v1.1.4
+        with: 
+          organizationId: ${{ secrets.BOT_ARTIA_ORG_ID }}
+          creatorEmail: ${{ secrets.BOT_ARTIA_EMAIL }}
+          creatorPassword: ${{ secrets.BOT_ARTIA_PASSWORD }}
+
+```
+
 
 Clique em `Use this Template` e crie um repositório. Esse repositório precisa ser público para que você possa compartilhar essa action com outros repositórios.
 
