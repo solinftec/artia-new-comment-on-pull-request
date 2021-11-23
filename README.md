@@ -52,7 +52,6 @@ Link da atividade no Artia:[Cole aqui o titulo da atividade](Cole aqui o link da
 > Escreva aqui o comentário que será enviado para o Artia. Obs: Não insira código HTML/Markdown
 
 **End Artia Comment**
-
 ```
 
 ## Pronto! Agora vamos testar se funciona.
