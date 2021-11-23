@@ -59,7 +59,7 @@ Link da atividade no Artia:[Cole aqui o título da atividade](Cole aqui o link d
 
 ### Exemplo de um `Pull Request` seguindo o template da nossa integração:
 
-```md
+```
 Link da atividade no Artia:[Integração Github Artia](https://app.artia.com/a/3757125/f/3757166/activities/19667956)
 
 **Start Artia Comment**
