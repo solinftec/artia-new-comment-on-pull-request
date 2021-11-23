@@ -9,8 +9,7 @@
 
 1. Vá na aba `Actions` do seu repositório.
 2. Aperte em `Set up a workflow yourself`. Ao apertar nesse botão o Github cria um arquivo `main.yml` na pasta `.github/workflows/`.
-3. Mude o nome do arquivo de `main.yml` para `artia-new-comment-on-pull-request.yml`.
-4. Delete todo o código que já veio como template dentro do arquivo `main.yml` e cole o seguinte código:
+3. Delete todo o código que já veio como template dentro do arquivo `main.yml` e cole o seguinte código:
 ```
 on:
   pull_request:
@@ -32,10 +31,11 @@ jobs:
           creatorPassword: ${{ secrets.BOT_ARTIA_PASSWORD }}
 
 ```
-> Obs: Ao colar é importante que aindentação do código seja mantinda. 
+> Obs: Ao copiar e colar o código acima é importante que a indentação do código seja mantinda. 
+
+4. Mude o nome do arquivo de `main.yml` para `artia-new-comment-on-pull-request.yml`.
 
 
-Clique em `Use this Template` e crie um repositório. Esse repositório precisa ser público para que você possa compartilhar essa action com outros repositórios.
 
 ## Caso você queira personalizar a action escreva seu código dentro do arquivo Main.ts na pasta src (Crie novos arquivos se necessário, mas sempre os chame dentro do Main e crie eles dentro da pasta src)
 
