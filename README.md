@@ -1,5 +1,5 @@
 ## Integração Github Actions - Artia 
-# Criar comentario por Pull Request
+# Criar comentário por Pull Request
 
 Esse repositório é uma Github Action e ela faz o seguinte:
 > Ao fazer o merge de um Pull Request é criado um comentário na atividade do Artia.
