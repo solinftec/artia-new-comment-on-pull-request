@@ -70,36 +70,4 @@ Link da atividade no Artia:[Integração Github Artia](https://app.artia.com/a/3
 O que você escrever aqui fora, não irá aparecer no artia.
 ```
 
-
-
-
-
-
-
-### Caso você queira personalizar a action escreva seu código dentro do arquivo Main.ts na pasta src (Crie novos arquivos se necessário, mas sempre os chame dentro do Main e crie eles dentro da pasta src)
-
-> Para evitar problemas tenha a versão LTS mais recente do NodeJs instalada em conjunto com o npm.
-
-Instalar as dependências
-
-```bash
-$ npm install
-```
-
-Build typescript and package it for distribution
-
-```bash
-$ npm run all
-```
-
-
-## Subindo para repositório para utilizar a Action
-
-```bash
-$ git add -A
-$ git commit -m "My first action commit"
-$ git tag -a -m "My first action release" v1.1
-$ git push --follow-tags
-```
-
 :rocket: :rocket: :rocket:
