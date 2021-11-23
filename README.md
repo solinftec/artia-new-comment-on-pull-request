@@ -3,7 +3,7 @@
 :rocket: :rocket: :rocket:
 
 Esse é repositório de uma Github Action. Ele faz o seguinte:
-### Ao fazer o merge de um Pull Reuqest ele cria um comentário na atividade do Artia.
+> Ao fazer o merge de um Pull Request é criado um comentário na atividade do Artia.
 
 Essa ação foi criada a partir do template: [Typescript-Action-Template](https://github.com/actions/typescript-action)
 
