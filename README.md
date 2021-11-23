@@ -7,7 +7,7 @@
 
 ## Como usar essa integração no seu repositório?
 
-1. Vá na aba `Actions` do seu repositório.
+1. Abra seu repositório no Github e vá na aba `Actions`.
 2. Aperte em `Set up a workflow yourself`.
 > Ao apertar nesse botão o Github cria um arquivo `main.yml` na pasta `.github/workflows/`.
 3. Delete todo o código que já veio como template dentro do arquivo `main.yml`.
