@@ -31,7 +31,6 @@ jobs:
           organizationId: ${{ secrets.BOT_ARTIA_ORG_ID }}
           creatorEmail: ${{ secrets.BOT_ARTIA_EMAIL }}
           creatorPassword: ${{ secrets.BOT_ARTIA_PASSWORD }}
-
 ```
 > Obs: Ao copiar e colar o código acima é importante que a indentação do código seja mantinda. 
 
