@@ -43,7 +43,7 @@ jobs:
 > É essencial que o template seja usado para a integração funcionar.
 
 7. Crie um arquivo `pull_request_template.md` na pasta `.github/` localizada na raiz do seu repositório.
-8. Copie e cole o código abaixo no arquivo `.github/pull_request_template.md`.
+8. Copie e cole o texto abaixo no arquivo `.github/pull_request_template.md`.
 
 ```
 Link da atividade no Artia:[Cole aqui o titulo da atividade](Cole aqui o link da atividade mantendo os parenteses)
@@ -54,6 +54,12 @@ Link da atividade no Artia:[Cole aqui o titulo da atividade](Cole aqui o link da
 **End Artia Comment**
 
 ```
+
+## Pronto! Agora vamos testar se funciona.
+> Faça um merge de um Pull Request para o seu branch principal (Master ou Main). Ao abrir esse Pull Request você já verá o template `pull_request_template.md` aparecer. Siga as intruções que estão no template e faça o merge. Caso tudo esteja certinho, um comentário será criado na atividade do Artia.
+
+
+
 
 
 
