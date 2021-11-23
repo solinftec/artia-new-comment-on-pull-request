@@ -7,7 +7,7 @@
 
 ## Como usar essa integração no seu repositório?
 
-1. Vá na aba `Actions` do seu repositório 
+1. Vá na aba `Actions` do seu repositório.
 2. Aperte em `Set up a workflow yourself`. Ao apertar nesse botão o Github cria um arquivo `main.yml` na pasta `.github/workflows/`.
 3. Mude o nome de `main.yml` para `artia-new-comment-on-pull-request.yml`.
 
