@@ -1,7 +1,7 @@
 # Integração Github - Artia 
 
-Esse repositório é uma Github Action e ela faz o seguinte:
-### Quando acontecer o merge de um `Pull Request` é criado um comentário na atividade do Artia.
+### Esse repositório é uma Github Action e ela faz o seguinte:
+> Quando acontecer o merge de um `Pull Request` é criado um comentário na atividade do Artia.
 
 
 
