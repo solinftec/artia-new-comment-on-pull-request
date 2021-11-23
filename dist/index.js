@@ -269,16 +269,16 @@ const organizationId = parseInt(core.getInput('organizationId')); //Organization
 const creatorEmail = core.getInput('creatorEmail'); //Email criador do comentário (informado no main.yml do workflow).
 const creatorPassword = core.getInput('creatorPassword'); //Password (Váriavel de ambiente{sescrets.ARTIA_PASSWORD} informada no main.yml do workflow).
 const pull_request = objPayload.pull_request;
-const artiaUrl = pull_request.body
-    .split('Start Artia Link**> (')
-    .pop()
-    .split(')**End Artia Link')[0];
 // const artiaUrl = pull_request.body
-//   .split('Link da tarefa no Artia:[')
+//   .split('Start Artia Link**> (')
 //   .pop()
-//   .split('](')
-//   .pop()
-//   .split(')')[0]
+//   .split(')**End Artia Link')[0]
+const artiaUrl = pull_request.body
+    .split('Link da tarefa no Artia:[')
+    .pop()
+    .split('](')
+    .pop()
+    .split(')')[0];
 const accountId = artiaUrl.split('/a/').pop().split('/f')[0];
 const activityId = artiaUrl
     .split('/activities/')
@@ -288,15 +288,15 @@ const ArtiaComment = pull_request.body
     .split('Start Artia Comment')
     .pop()
     .split('End Artia Comment')[0];
-console.log(" OrganizationId =>", organizationId);
-console.log(" ActivityId =>", activityId);
-console.log(" ArtiaUrl =>", artiaUrl);
+console.log(' OrganizationId =>', organizationId);
+console.log(' ActivityId =>', activityId);
+console.log(' ArtiaUrl =>', artiaUrl);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const userName = yield (0, userInfo_1.getName)(pull_request.user.login);
             const content = `Comentário criado por: ${userName} a partir de um Pull-Request via API  \n${ArtiaComment}\nMais informações no GitHub: ${pull_request.html_url}`;
-            console.log(" content =>", content);
+            console.log(' content =>', content);
             (0, createComment_1.createComment)(organizationId, accountId, activityId, creatorEmail, creatorPassword, content);
         }
         catch (error) {
