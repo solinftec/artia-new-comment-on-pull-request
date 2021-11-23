@@ -9,7 +9,8 @@
 
 1. Vá na aba `Actions` do seu repositório.
 2. Aperte em `Set up a workflow yourself`. Ao apertar nesse botão o Github cria um arquivo `main.yml` na pasta `.github/workflows/`.
-3. Delete todo o código que já veio como template dentro do arquivo `main.yml` e cole o seguinte código:
+3. Delete todo o código que já veio como template dentro do arquivo `main.yml`.
+4. Copie e cole o código abaixo no arquivo `main.yml`.
 ```
 on:
   pull_request:
