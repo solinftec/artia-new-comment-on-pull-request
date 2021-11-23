@@ -12,6 +12,7 @@
 > Ao apertar nesse botão o Github cria um arquivo `main.yml` na pasta `.github/workflows/`.
 3. Delete todo o código que já veio como template dentro do arquivo `main.yml`.
 4. Copie e cole o código abaixo no arquivo `main.yml`.
+
 ```
 on:
   pull_request:
@@ -32,15 +33,27 @@ jobs:
           creatorEmail: ${{ secrets.BOT_ARTIA_EMAIL }}
           creatorPassword: ${{ secrets.BOT_ARTIA_PASSWORD }}
 ```
+
 > Obs: Ao copiar e colar o código acima é importante que a indentação do código seja mantinda. 
 
 5. Mude o nome do arquivo de `main.yml` para `artia_comment_on_pr.yml`.
 6. Aperte no botão `Start commit` e depois no botão `Commit new file`.
 
 ## Quase lá! Agora vamos adicionar um template de `Pull Request` no seu repositório.
-> É essencial que o template seja usado para integração funcionar.
+> É essencial que o template seja usado para a integração funcionar.
 
-7. 
+7. Crie um arquivo `pull_request_template.md` na pasta `.github/` localizada na raiz do seu repositório.
+8. Copie e cole o código abaixo no arquivo `.github/pull_request_template.md`.
+
+```
+Link da atividade no Artia:[Cole aqui o titulo da atividade](Cole aqui o link da atividade mantendo os parenteses)
+
+**Start Artia Comment**
+> Escreva aqui o comentário que será enviado para o Artia. Obs: Não insira código HTML/Markdown
+
+**End Artia Comment**
+
+```
 
 
 
