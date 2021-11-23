@@ -37,6 +37,14 @@ jobs:
 5. Mude o nome do arquivo de `main.yml` para `artia_comment_on_pr.yml`.
 6. Aperte no botão `Start commit` e depois no botão `Commit new file`.
 
+## Quase lá! Agora vamos adicionar um template de `Pull Request` no seu repositório.
+> É essencial que o template seja usado para integração funcionar.
+
+7. 
+
+
+
+
 
 
 
