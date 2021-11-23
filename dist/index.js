@@ -270,11 +270,15 @@ const creatorEmail = core.getInput('creatorEmail'); //Email criador do comentár
 const creatorPassword = core.getInput('creatorPassword'); //Password (Váriavel de ambiente{sescrets.ARTIA_PASSWORD} informada no main.yml do workflow).
 const pull_request = objPayload.pull_request;
 const artiaUrl = pull_request.body
-    .split('Link da tarefa no Artia:[')
+    .split('Start Artia Link**> (')
     .pop()
-    .split('](')
-    .pop()
-    .split(')')[0];
+    .split(')**End Artia Link')[0];
+// const artiaUrl = pull_request.body
+//   .split('Link da tarefa no Artia:[')
+//   .pop()
+//   .split('](')
+//   .pop()
+//   .split(')')[0]
 const accountId = artiaUrl.split('/a/').pop().split('/f')[0];
 const activityId = artiaUrl
     .split('/activities/')
