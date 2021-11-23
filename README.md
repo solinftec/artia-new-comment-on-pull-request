@@ -63,11 +63,11 @@ Link da atividade no Artia:[Cole aqui o título da atividade](Cole aqui o link d
 Link da atividade no Artia:[Integração Github Artia](https://app.artia.com/a/3757125/f/3757166/activities/19667956)
 
 **Start Artia Comment**
-> Tudo o que você escrever aqui, dentro das tags, irá aparacer no comentário do artia.
+> Tudo o que você escrever aqui dentro, irá aparacer no comentário do artia.
 
 **End Artia Comment**
 
-O que você escrever aqui, fora das tags, não irá aperecer no artia.
+O que você escrever aqui fora, não irá aparecer no artia.
 ```
 
 
