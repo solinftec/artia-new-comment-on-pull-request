@@ -11,7 +11,7 @@ Essa ação foi criada a partir do template: [Typescript-Action-Template](https:
 
 Clique em `Use this Template` e crie um repositório. Esse repositório precisa ser público para que você possa compartilhar essa action com outros repositórios.
 
-## Escreva seu código dentro do arquivo Main.ts na pasta src (Crie novos arquivos se necessário, mas sempre os chame dentro do Main e crie eles dentro da pasta src)
+## Caso você queria personalizar a action escreva seu código dentro do arquivo Main.ts na pasta src (Crie novos arquivos se necessário, mas sempre os chame dentro do Main e crie eles dentro da pasta src)
 
 > Para evitar probrelmas tenha a versão LTS mais recente do NodeJs instalada em conjunto com o npm.
 
@@ -27,11 +27,6 @@ Build typescript and package it for distribution
 $ npm run all
 ```
 
-## Edite o action.yml
-
-O action.yml define os inputs e outputs de sua Action.
-
-documentação da sintaxe de um action.yml [documentation](https://help.github.com/en/articles/metadata-syntax-for-github-actions)
 
 ## Subindo para repositório para utilizar a Action
 
