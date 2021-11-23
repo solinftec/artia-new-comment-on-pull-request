@@ -46,7 +46,7 @@ jobs:
 8. Copie e cole o texto abaixo no arquivo `.github/pull_request_template.md`.
 
 ```
-Link da atividade no Artia:[Cole aqui o título dentro dos colchetes](Cole aqui o link da atividade dentro dos parênteses)
+Link da atividade no Artia:[Cole aqui o título da atividade](Cole aqui o link da atividade)
 
 **Start Artia Comment**
 > Escreva aqui o comentário que será enviado para o Artia. Obs: Não insira código HTML/Markdown
@@ -56,6 +56,19 @@ Link da atividade no Artia:[Cole aqui o título dentro dos colchetes](Cole aqui 
 
 ## Pronto! Agora vamos testar se funciona.
 > Faça um merge de um Pull Request para o seu branch principal (Master ou Main). Ao abrir esse Pull Request você já verá o template `pull_request_template.md` aparecer. Siga as intruções que estão no template e faça o merge. Caso tudo esteja certinho, um comentário será criado na atividade do Artia.
+
+> Abaixo um exemplo de um `Pull Request` seguindo o template da nossa integração:
+
+```md
+Link da atividade no Artia:[Cole aqui o título da atividade](Cole aqui o link da atividade)
+
+**Start Artia Comment**
+> Escreva aqui o comentário que será enviado para o Artia. Obs: Não insira código HTML/Markdown
+
+**End Artia Comment**
+```
+
+
 
 
 
