@@ -34,7 +34,7 @@ jobs:
 ```
 > Obs: Ao copiar e colar o código acima é importante que a indentação do código seja mantinda. 
 
-5. Mude o nome do arquivo de `main.yml` para `artia-new-comment-on-pull-request.yml`.
+5. Mude o nome do arquivo de `main.yml` para `artia_new_comment_on_pull_request.yml`.
 
 
 
