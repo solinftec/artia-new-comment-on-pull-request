@@ -61,12 +61,7 @@ Link da atividade no Artia:[Cole aqui o titulo da atividade](Cole aqui o link da
 
 
 
-
-
-
-
-
-## Caso você queira personalizar a action escreva seu código dentro do arquivo Main.ts na pasta src (Crie novos arquivos se necessário, mas sempre os chame dentro do Main e crie eles dentro da pasta src)
+### Caso você queira personalizar a action escreva seu código dentro do arquivo Main.ts na pasta src (Crie novos arquivos se necessário, mas sempre os chame dentro do Main e crie eles dentro da pasta src)
 
 > Para evitar problemas tenha a versão LTS mais recente do NodeJs instalada em conjunto com o npm.
 
