@@ -43,7 +43,7 @@ jobs:
 ## Quase lá! Agora vamos adicionar um template de `Pull Request` no seu repositório.
 > É essencial que o template seja usado para a integração funcionar.
 
-7. Crie um arquivo `pull_request_template.md` na pasta `.github/` localizada na raiz do seu repositório.
+7. Crie um arquivo chamado `pull_request_template.md` na pasta `.github/` localizada na raiz do seu repositório.
 8. Copie e cole o texto abaixo no arquivo `.github/pull_request_template.md`.
 
 ```
@@ -56,9 +56,9 @@ Link da atividade no Artia:[Cole aqui o título da atividade](Cole aqui o link d
 ```
 
 ## Pronto! Agora vamos testar se funciona.
-> Faça um merge de um Pull Request para o(s) branch(es) especificados no workflow. Ao abrir esse Pull Request você já verá o template `pull_request_template.md` aparecer. Siga as intruções que estão no template e faça o merge. Caso tudo esteja certinho, um comentário será criado na atividade do Artia.
+> Faça um merge de um Pull Request para o(s) branch(es) especificado(s) no workflow. Ao abrir esse Pull Request você verá o template `pull_request_template.md` aparecer. Siga as intruções que estão no template e faça o merge. Caso tudo esteja certo, um comentário será criado na atividade do Artia.
 
-> OBS: Os arquivos de workflow e template precisam fazer parte do Default Branch(main/master).
+> OBS: Os arquivos de workflow e template precisam fazer parte do seu `Default Branch(main/master)`.
 
 ### Exemplo de um `Pull Request` seguindo o template da nossa integração:
 
