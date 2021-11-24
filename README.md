@@ -58,7 +58,7 @@ Link da atividade no Artia:[Cole aqui o título da atividade](Cole aqui o link d
 ## Pronto! Agora vamos testar se funciona.
 > Faça um merge de um Pull Request para o(s) branch(es) especificados no workflow. Ao abrir esse Pull Request você já verá o template `pull_request_template.md` aparecer. Siga as intruções que estão no template e faça o merge. Caso tudo esteja certinho, um comentário será criado na atividade do Artia.
 
-> OBS: Os arquivos de workflow e template precisam fazer parte do Default Branch(main/master)
+> OBS: Os arquivos de workflow e template precisam fazer parte do Default Branch(main/master).
 
 ### Exemplo de um `Pull Request` seguindo o template da nossa integração:
 
