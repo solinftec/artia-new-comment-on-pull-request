@@ -20,6 +20,7 @@ on:
     branches:
       - main
       - master
+      - development
   
 jobs:
   artia_comment_job:
