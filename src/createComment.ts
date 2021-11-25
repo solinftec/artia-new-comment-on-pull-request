@@ -70,23 +70,31 @@ export async function createComment(
       }
     })
     .catch(function (error: AxiosError) {
-      console.log(error.config)
+      console.log('\n error.config => ', error.config, '\n')
       if (error.response) {
         // The request was made and the server responded with a status code
         // that falls out of the range of 2xx
-        console.log(error.response.data)
-        console.log(error.response.status)
-        console.log(error.response.headers)
+
+        console.log('\n error.response.data => ', error.response.data, '\n')
+
+        console.log('\n error.response.status => ', error.response.status, '\n')
+
+        console.log(
+          '\n error.response.headers => ',
+          error.response.headers,
+          '\n'
+        )
         return error.response
       } else if (error.request) {
         // The request was made but no response was received
         // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
         // http.ClientRequest in node.js
-        console.log(error.request)
+
+        console.log('\n error.request => ', error.request, '\n')
         return error.request
       } else {
         // Something happened in setting up the request that triggered an Error
-        console.log('Error', error.message)
+        console.log('\n error.message => ', error.message, '\n')
         return error.message
       }
     })
