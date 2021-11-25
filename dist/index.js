@@ -90,15 +90,14 @@ function createComment(organizationId, accountId, activityId, creatorEmail, crea
         };
         (0, axios_1.default)(config)
             .then(function (response) {
-            console.log('\n Axios .Then main.ts \n');
             console.log('\n JSON.stringify(response.data) => ', JSON.stringify(response.data), '\n');
             const resObj = response.data;
             if (resObj.data != null) {
                 console.log('Sucesso! Atividade comentada');
             }
             else {
-                console.log('\n response.config => ', response.config, '\n');
                 console.log('\n response.status => ', response.status, '\n');
+                console.log('\n response.config => ', response.config, '\n');
                 console.log('\n response.headers => ', response.headers, '\n');
                 core.setFailed(resObj.errors[0]);
             }
