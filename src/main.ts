@@ -32,15 +32,15 @@ const ArtiaComment = pull_request.body
   .pop()
   .split('End Artia Comment')[0]
 
-console.log(' OrganizationId =>', organizationId)
-console.log(' ActivityId =>', activityId)
-console.log(' ArtiaUrl =>', artiaUrl)
+console.log('\n OrganizationId =>', organizationId, '\n')
+console.log('\n ActivityId =>', activityId, '\n')
+console.log('\n ArtiaUrl =>', artiaUrl, '\n')
 async function run(): Promise<void> {
   try {
     const userName = await getName(pull_request.user.login)
 
     const content = `Comentário criado por: ${userName} a partir de um Pull-Request via API  \n${ArtiaComment}\nMais informações no GitHub: ${pull_request.html_url}`
-    console.log(' content =>', content)
+    console.log('\n Content =>', content, '\n')
     createComment(
       organizationId,
       accountId,
