@@ -58,6 +58,7 @@ export async function createComment(
 
   axios(config)
     .then(function (response: AxiosResponse) {
+      console.log('\n Axios .Then main.ts \n')
       console.log(
         '\n JSON.stringify(response.data) => ',
         JSON.stringify(response.data),
@@ -65,7 +66,7 @@ export async function createComment(
       )
       const resObj = response.data
       if (resObj.data != null) {
-        console.log('Atividade comentada com sucesso!')
+        console.log('Sucesso! Atividade comentada')
       } else {
         console.log('\n response.config => ', response.config, '\n')
         console.log('\n response.status => ', response.status, '\n')
