@@ -28,7 +28,7 @@ jobs:
     name: Comment Activity.
     steps:
       - name: Comentando Atividade
-        uses: solinftec/artia-new-comment-on-pull-request@v1.1.4
+        uses: solinftec/artia-new-comment-on-pull-request@main
         with: 
           organizationId: ${{ secrets.BOT_ARTIA_ORG_ID }}
           creatorEmail: ${{ secrets.BOT_ARTIA_EMAIL }}
