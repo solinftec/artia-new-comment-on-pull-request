@@ -50,7 +50,11 @@ async function run(): Promise<void> {
       content
     )
   } catch (error) {
-    if (error instanceof Error) core.setFailed(error.message)
+    if (error instanceof Error) {
+      console.log('\n error.message =>', error.message, '\n')
+      return
+    }
+    // if (error instanceof Error) core.setFailed(error.message)
   }
 }
 
