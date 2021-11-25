@@ -90,38 +90,39 @@ function createComment(organizationId, accountId, activityId, creatorEmail, crea
         };
         (0, axios_1.default)(config)
             .then(function (response) {
-            console.log(JSON.stringify(response.data));
+            console.log('\n Axios .Then main.ts \n');
+            console.log('\n JSON.stringify(response.data) => ', JSON.stringify(response.data), '\n');
             const resObj = response.data;
             if (resObj.data != null) {
-                console.log('Atividade comentada com sucesso!');
+                console.log('Sucesso! Atividade comentada');
             }
             else {
-                console.log(response.config);
-                console.log(response.status);
-                console.log(response.headers);
+                console.log('\n response.config => ', response.config, '\n');
+                console.log('\n response.status => ', response.status, '\n');
+                console.log('\n response.headers => ', response.headers, '\n');
                 core.setFailed(resObj.errors[0]);
             }
         })
             .catch(function (error) {
-            console.log(error.config);
+            console.log('\n error.config => ', error.config, '\n');
             if (error.response) {
                 // The request was made and the server responded with a status code
                 // that falls out of the range of 2xx
-                console.log(error.response.data);
-                console.log(error.response.status);
-                console.log(error.response.headers);
+                console.log('\n error.response.data => ', error.response.data, '\n');
+                console.log('\n error.response.status => ', error.response.status, '\n');
+                console.log('\n error.response.headers => ', error.response.headers, '\n');
                 return error.response;
             }
             else if (error.request) {
                 // The request was made but no response was received
                 // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
                 // http.ClientRequest in node.js
-                console.log(error.request);
+                console.log('\n error.request => ', error.request, '\n');
                 return error.request;
             }
             else {
                 // Something happened in setting up the request that triggered an Error
-                console.log('Error', error.message);
+                console.log('\n error.message => ', error.message, '\n');
                 return error.message;
             }
         });
@@ -300,8 +301,11 @@ function run() {
             (0, createComment_1.createComment)(organizationId, accountId, activityId, creatorEmail, creatorPassword, content);
         }
         catch (error) {
-            if (error instanceof Error)
-                core.setFailed(error.message);
+            if (error instanceof Error) {
+                console.log('\n error.message =>', error.message, '\n');
+                return;
+            }
+            // if (error instanceof Error) core.setFailed(error.message)
         }
     });
 }
