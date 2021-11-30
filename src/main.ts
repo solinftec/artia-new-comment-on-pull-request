@@ -32,7 +32,7 @@ const ArtiaComment = pull_request.body
   .pop()
   .split('End Artia Comment')[0]
   //Remove "\" do comentário do Artia
-  .replace(/\\/g, '/')
+  .replace(/\\/g, '\\')
 
 console.log('\n OrganizationId =>', organizationId, '\n')
 console.log('\n ActivityId =>', activityId, '\n')
