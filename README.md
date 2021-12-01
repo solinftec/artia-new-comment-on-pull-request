@@ -48,6 +48,7 @@ jobs:
 
 
 5. Crie um arquivo chamado `pull_request_template.md` na pasta `.github/` localizada na raiz do seu projeto.
+> O nome do arquivo precisa ser exatamente `pull_request_template.md`.
 6. Copie e cole o texto abaixo no arquivo `.github/pull_request_template.md`.
 
 ```
