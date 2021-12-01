@@ -8,7 +8,7 @@
 ## Como usar essa integração no seu repositório?
 
 1. Abra o seu repositório na sua IDE de preferência (Ex: VSCode, IntelliJ).
-2. Crie as seguintes pastas `.github/workflows/` na raiz do seu repositório.
+2. Crie as seguintes pastas `.github/workflows/` na raiz do seu projeto.
 > OBS: A pasta `workflows` tem que estar dentro da pasta `.github/`
 3. Crie um arquivo `artia_comment_on_pr.yml` na pasta `.github/workflows/`.
 4. Copie e cole o código abaixo no arquivo `artia_comment_on_pr.yml`.
