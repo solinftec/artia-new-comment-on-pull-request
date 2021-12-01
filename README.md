@@ -7,7 +7,7 @@
 
 ## Como usar essa integração no seu repositório?
 
-1. Abra o seu repositório no seu editor de código.
+1. Abra o seu repositório no seu editor de código preferido.
 2. Crie as seguintes pastas `.github/workflows/` na raiz do seu projeto.
 > Essas pastas podem ser criadas em qualquer branch do seu repositório git.
 
