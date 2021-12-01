@@ -79,7 +79,7 @@ Link da atividade no Artia:[Integração Github Artia](https://app.artia.com/a/3
 
 **Start Artia Comment**
 
-Tudo o que você escrever aqui dentro, irá aparacer no comentário do artia.
+Tudo o que você escrever aqui dentro, irá aparacer no comentário do artia.. Obs: Não insira código HTML/Markdown
 
 **End Artia Comment**
 
