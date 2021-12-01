@@ -1,7 +1,7 @@
 # Integração Github - Artia 
 
 ### Esse repositório é uma Github Action e ela faz o seguinte:
-> Quando acontecer um `Pull Request` for aberto ou fechado é criado um comentário em uma atividade do Artia.
+> Quando um `Pull Request` for aberto ou fechado é criado um comentário em uma atividade do Artia.
 
 
 
