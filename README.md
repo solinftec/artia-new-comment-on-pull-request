@@ -44,6 +44,7 @@ jobs:
 
 
 ## Quase lá! Agora vamos adicionar um template de `Pull Request` no seu repositório.
+> #### gora vamos adicionar um template de.
 > É essencial que o template seja usado para a integração funcionar.
 
 7. Crie um arquivo chamado `pull_request_template.md` na pasta `.github/` localizada na raiz do seu repositório.
