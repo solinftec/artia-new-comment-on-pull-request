@@ -19,6 +19,7 @@ on:
   pull_request:
     types: [closed]
     branches:
+      - main
       - master
       - development
       - homologation
