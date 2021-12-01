@@ -7,12 +7,11 @@
 
 ## Como usar essa integração no seu repositório?
 
-1. Abra seu repositório no Github e vá na aba `Actions`.
-2. Aperte em `Set up a workflow yourself`.
-> Ao apertar nesse botão o Github cria um arquivo `main.yml` na pasta `.github/workflows/`.
-3. Delete todo o código que já veio como template dentro do arquivo `main.yml`.
-4. Copie e cole o código abaixo no arquivo `main.yml`.
-
+1. Abra o seu repositório na sua IDE de preferência(Ex: VSCode, IntelliJ).
+2. Crie as seguintes pastas `.github/workflows/` na raiz do seu projeto.
+> OBS: A pasta `workflows` tem que estar dentro da pasta `.github/`
+3. Crie um arquivo `artia_comment_on_pr.yml` na pasta `.github/workflows/`.
+4. Copie e cole o código abaixo no arquivo `artia_comment_on_pr.yml`.
 ```
 on:
   pull_request:
@@ -37,8 +36,7 @@ jobs:
 
 > Obs: Ao copiar e colar o código acima é importante que a indentação do código seja mantinda. 
 
-5. Mude o nome do arquivo de `main.yml` para `artia_comment_on_pr.yml`.
-6. Aperte no botão `Start commit` e depois no botão `Commit new file`.
+
 
 ## Quase lá! Agora vamos adicionar um template de `Pull Request` no seu repositório.
 > É essencial que o template seja usado para a integração funcionar.
