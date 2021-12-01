@@ -1,13 +1,13 @@
 # Integração Github - Artia 
 
 ### Esse repositório é uma Github Action e ela faz o seguinte:
-> Quando um `Pull Request` for aberto ou fechado é criado um comentário em uma atividade do Artia.
+> Quando um `Pull Request` for aberto ou fechado, é criado um comentário em uma atividade do Artia.
 
 
 
 ## Como usar essa integração no seu repositório?
 
-1. Abra o seu repositório na sua IDE de preferência(Ex: VSCode, IntelliJ).
+1. Abra o seu repositório na sua IDE de preferência (Ex: VSCode, IntelliJ).
 2. Crie as seguintes pastas `.github/workflows/` na raiz do seu projeto.
 > OBS: A pasta `workflows` tem que estar dentro da pasta `.github/`
 3. Crie um arquivo `artia_comment_on_pr.yml` na pasta `.github/workflows/`.
