@@ -44,7 +44,7 @@ jobs:
 
 
 ## Quase lá! Agora vamos adicionar um template de `Pull Request` no seu repositório.
-#### Importante: O template de `Pull Request` precisa ser criado no default branch do seu repositório git, por exemplo: `main ou master`
+#### Importante: O arquivo de template de `Pull Request` precisa ser criado no default branch do seu repositório git, por exemplo: `(main ou master)`
 
 
 5. Crie um arquivo chamado `pull_request_template.md` na pasta `.github/` localizada na raiz do seu projeto.
@@ -61,10 +61,16 @@ Tudo o que você escrever aqui dentro, irá aparacer no comentário do artia.. O
 **End Artia Comment**
 ```
 
-## Pronto! Agora vamos testar se funciona.
+## Pronto! Agora basta fazer o commit e o push dessas mudanças para o código no github.
+
+
+
+
+### Agora vamos testar!
+
 > Faça um merge de um Pull Request para o(s) branch(es) especificado(s) no workflow. Ao abrir esse Pull Request você verá o template `pull_request_template.md` aparecer. Siga as intruções que estão no template e faça o merge. Caso tudo esteja certo, um comentário será criado na atividade do Artia.
 
-> OBS: Os arquivo de template precisa fazer parte do seu `Default Branch(main/master)`.
+> OBS: O arquivo de template precisa fazer parte do seu `Default Branch(main/master)`.
 
 ### Exemplo de um `Pull Request` seguindo o template da nossa integração:
 
