@@ -47,8 +47,8 @@ jobs:
 #### Importante: O template de `Pull Request` precisa ser criado no default branch do seu repositório git `Ex: main ou master`
 
 
-7. Crie um arquivo chamado `pull_request_template.md` na pasta `.github/` localizada na raiz do seu repositório.
-8. Copie e cole o texto abaixo no arquivo `.github/pull_request_template.md`.
+5. Crie um arquivo chamado `pull_request_template.md` na pasta `.github/` localizada na raiz do seu projeto.
+6. Copie e cole o texto abaixo no arquivo `.github/pull_request_template.md`.
 
 ```
 Link da atividade no Artia:[Cole aqui o título da atividade](Cole aqui o link da atividade)
