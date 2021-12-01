@@ -38,7 +38,7 @@ jobs:
 
 > Obs: Ao copiar e colar o código acima é importante que a indentação do código seja mantinda. 
 
-> Abaixo está a documentação oficial do github actions, caso você queira editar em quais branches essa ação deve rodar.
+> Link da documentação oficial do github actions, caso você queira editar em quais branches essa ação deve rodar.
 > https://docs.github.com/pt/actions/learn-github-actions/events-that-trigger-workflows
 
 
