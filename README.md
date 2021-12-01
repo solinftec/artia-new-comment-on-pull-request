@@ -18,9 +18,9 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - main
       - master
       - development
+      - homologation
   
 jobs:
   artia_comment_job:
