@@ -10,6 +10,7 @@
 1. Abra o seu repositório na sua IDE de preferência (Ex: IntelliJ, VSCode).
 2. Crie as seguintes pastas `.github/workflows/` na raiz do seu projeto.
 > Essas pastas podem ser criadas em qualquer branch do seu repositório git.
+
 > OBS: A pasta `workflows` precisa estar dentro da pasta `.github/`
 4. Crie um arquivo `artia_comment_on_pr.yml` na pasta `.github/workflows/`.
 5. Copie e cole o código abaixo no arquivo `artia_comment_on_pr.yml`.
