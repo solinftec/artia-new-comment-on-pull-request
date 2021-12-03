@@ -91,6 +91,6 @@ O que você escrever aqui fora, não irá aparecer no artia.
 ```
 Assista aqui nosso vídeo de demonstração!
 
-https://youtu.be/urOwdwa3YFw
+> https://youtu.be/urOwdwa3YFw
 
 :rocket: :rocket: :rocket:
