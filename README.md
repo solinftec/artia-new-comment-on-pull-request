@@ -90,6 +90,7 @@ Tudo o que você escrever aqui dentro, irá aparacer no comentário do artia.. O
 O que você escrever aqui fora, não irá aparecer no artia.
 ```
 Assista aqui nosso vídeo de demonstração!
+
 https://youtu.be/urOwdwa3YFw
 
 :rocket: :rocket: :rocket:
