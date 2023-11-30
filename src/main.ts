@@ -26,7 +26,7 @@ const accountId = artiaUrl.split('/a/').pop().split('/f')[0]
 const activityId = artiaUrl
   .split('/activities/')
   .pop()
-  // .split(artiaUrl.length)[0]
+  .split(artiaUrl.length)[0]
 const ArtiaComment = pull_request.body
   .split('Start Artia Comment')
   .pop()
